@@ -3,7 +3,10 @@ let heroi = {
     xp: 10000
 };
 
-let nivel = "";
+function mostrarNivel() {
+            heroi.xp = parseInt(document.getElementById('xp').value);
+            let nivel = "";
+
 
 if (heroi.xp <= 1000){
     nivel = "Ferro";
@@ -17,8 +20,9 @@ if (heroi.xp <= 1000){
     nivel = "Ascendente";
 } else if (heroi.xp >= 9001 && heroi.xp <= 10000){
     nivel = "Imortal";
-} else if (heroi.xp > 10001){
+} else if (heroi.xp > 10000){
     nivel = "Radiante";
 }
+document.getElementById("mensagem").textContent = "O Herói de nome " + heroi.nome + " está no nível de " + nivel;
 
-console.log("O Herói de nome " + heroi.nome + " está no nível de " + nivel);
+}
