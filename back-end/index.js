@@ -4,9 +4,16 @@ let heroi = {
 };
 
 function mostrarNivel() {
-            heroi.xp = parseInt(document.getElementById('xp').value);
-            let nivel = "";
+           let xpInput = document.getElementById('xp').value;
 
+    if (xpInput.trim() === "") {
+        document.getElementById("mensagem").textContent = "Por favor, insira um valor de XP.";
+        document.getElementById("gif-nivel").style.display = "none";
+        return; 
+    }
+
+    heroi.xp = parseInt(xpInput);
+    let nivel = "";
 
 if (heroi.xp <= 1000){
     nivel = "Ferro";
@@ -25,4 +32,12 @@ if (heroi.xp <= 1000){
 }
 document.getElementById("mensagem").textContent = "O Herói de nome " + heroi.nome + " está no nível de " + nivel;
 
+const gif = document.getElementById("gif-nivel");
+    gif.src = "Cavaleiro-Lua.gif";
+    gif.style.display = "block";
+
+    setTimeout(() => {
+    gif.style.display = "none";
+}, 3900);
 }
+
