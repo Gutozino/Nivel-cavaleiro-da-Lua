@@ -23,4 +23,4 @@ Esse projeto foi proposto pelo senhor felipao da DIO, feito com a proposta de fa
 3. Clique no botão Ver nivel.
 4. Veja o nível do herói e a imagem animada.
 
-### LINK do projeto: <a href="[https://jefersonmanso.github.io/Classificador_De_Nivel_De_Heroi](https://gutozino.github.io/Nivel-cavaleiro-da-Lua/index.html)" target="_blank">Acesse o projeto aqui</a>
+### LINK do projeto: <a href="https://gutozino.github.io/Nivel-cavaleiro-da-Lua/index.html" target="_blank">Acesse o projeto aqui</a>
